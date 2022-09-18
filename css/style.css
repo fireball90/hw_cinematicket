@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Passion+One:wght@700&display=Permanent+Marker&display=Roboto:wght@300&display=swap');
+
+/*
+font-family: 'Exo 2', sans-serif;   //slim
+font-family: 'Passion One', cursive;  //bold
+font-family: 'Roboto', sans-serif; //base font
+*/
+
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+
+body{
+    background-color: black;
+    background-image: url('../img/background.jpg');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+/*******************************
+    HEADER
+*******************************/
+
+#outer_header{
+    width: 100%;
+    height: 100%;
+    background-color: #6d0d0d;
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+#inner_header{
+    width: 95%;
+    height: 100%;
+    background-image: url("../img/headerbg.jpg");
+    background: url("../img/headerbg.jpg");
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+
+#inner_header h1{
+    padding-top: 330px;
+    padding-bottom: 0px;
+    font-size: 90px;
+    color: #6d0d0d;
+    font-family: 'Passion One', cursive;
+    text-align: center;
+} 
+
+#inner_header h2{
+    font-size: 75px;
+    color: #000000;
+    font-family: 'Exo 2', sans-serif; 
+    padding: 0px;
+    text-align: center;
+} 
+
+/*******************************
+    SITE CONTAINER AND BASE
+*******************************/
+
+.container{
+    margin: 40px 100px 40px 100px;
+    height: 850px;
+    display: flex;
+    background-color: #222222;
+}
+
+#left {
+    flex: 1;
+}
+  
+#right {
+    background-color: #222222;
+    width: 60%;
+    overflow: hidden;
+    display: inline-block;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#top_text{
+    background-color: rgba(109, 17, 17, 0.6);
+    width: 500px;
+    height: 100px;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    text-shadow: #222222 1px 1px;
+    padding-top:10px;
+}
+
+/*******************************
+    Alap kiírás
+*******************************/
+#which_price{
+    margin: auto;
+    width: 500px;
+    color: rgb(255, 184, 184);
+    font-size: 20px;
+    text-align: center;
+}
+
+#ticket_one{
+    margin: auto;
+    width: 500px;
+    color: rgb(255, 184, 184);
+    font-size: 20px;
+    text-align: justify;
+}
+
+/*******************************
+    CALC FORM
+*******************************/
+
+#form_container{
+    margin: auto;
+    margin-top: 30px;
+    width: 500px;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+h3{
+    color: #ffffff;
+    text-shadow: #6d0d0d 1px 1px;
+    margin-bottom: 10px;
+}
+
+.btn{
+    width: 200px;
+    height: 50px;
+    font-family: 'Passion One', cursive;
+    font-size: 20px;
+    color: #fff;
+    border: #6d0d0d 3px solid;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #6d0d0d;
+}
+
+#calc_price input{
+    width: 400px;
+    height: 40px;
+    border: #6d0d0d 4px solid;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+
+/*******************************
+    PRICE BOX
+*******************************/
+
+#form_price{
+    width: 500px;
+    margin: auto;
+}
+
+#bot_text{
+    width: 500px;
+    height: 80px;
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-family: 'Passion One', cursive;
+    color: #fff;
+    text-shadow: #222222 1px 1px;
+    padding-top:30px;
+}
+
+#calculated{
+    font-size: 30px;
+    font-family: 'Exo 2', sans-serif; 
+    text-align: center;
+    margin: auto;
+    width: 500px;
+    color: #fff;
+    background-color: #6d0d0d96;
+    height: 100px;
+}
+
+#ticket_box{
+    margin: auto;
+    width: 500px;
+    overflow: auto;
+    height: 150px;
+    background-color: #6d0d0d96;
+    color: #fff;
+    font-size: 16px;
+}
+
+/*******************************
+    popup
+*******************************/
+
+.blur-filter {
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.loginPopup {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.formPopup {
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, 5%);
+    border: 3px solid #fdfdfd;
+    z-index: 9;
+    background-color: rgb(114, 22, 22);
+    padding: 20px;
+}
+
+.formContainer {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.formPopup input{
+    margin: 20px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.loginPopup2 {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.formPopup2 {
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, 5%);
+    border: 3px solid #fdfdfd;
+    z-index: 9;
+    background-color: rgb(114, 22, 22);
+    padding: 20px;
+}
+
+/*******************************
+    MEDIA SCREEN
+*******************************/
+
+@media screen and (max-width: 1080px){
+    #header h1{
+        font-size:50px;
+    }
+}
+@media screen and (max-width: 720px){
+    #header h1{
+        font-size:30px;
+    }
+}
